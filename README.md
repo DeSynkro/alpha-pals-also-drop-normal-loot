@@ -53,7 +53,7 @@ is never a strictly better source than its wild version.
 ## Compatibility
 
 Slot 10 is never written. It belongs to
-[Pals Drop Dog Coins](https://steamcommunity.com/sharedfiles/filedetails/?id=3626214974),
+[Pals Drop Dog Coins](https://steamcommunity.com/sharedfiles/filedetails/?id=3816899969), [Source Code](https://codeberg.org/DeSynkro/pals-drop-dog-coins),
 so the two mods run together with no conflict.
 
 This mod writes to slots 2 to 9. Those are used because most of them were empty or
