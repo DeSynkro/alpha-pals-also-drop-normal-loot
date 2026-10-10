@@ -1,0 +1,26 @@
+{
+  "ModName": "Alpha Pals Also Drop Normal Loot",
+  "PackageName": "AlphaPalsDropNormalLoot",
+  "Thumbnail": "thumbnail.png",
+  "Version": "1.0",
+  "DebugMode": false,
+  "MinRevision": 82182,
+  "Author": "DeSynkro",
+  "Dependencies": [
+    "PalSchema",
+    "UE4SSExperimentalPW"
+  ],
+  "Tags": [
+    "PalSchema",
+    "UE4SS",
+    "Gameplay"
+  ],
+  "InstallRule": [
+    {
+      "Type": "PalSchema",
+      "Targets": [
+        "./PalSchema/"
+      ]
+    }
+  ]
+}

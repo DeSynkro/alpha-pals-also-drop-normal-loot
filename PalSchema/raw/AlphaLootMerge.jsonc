@@ -1,0 +1,3132 @@
+{
+    "DT_PalDropItem": {
+        // ---------------------------------------------------------------
+        // Alpha Pals drop their normal counterpart's loot as well.
+        //
+        // Palworld already copies a normal Pal's loot into its Alpha row and
+        // sets the drop chance to 0. This mod turns those chances back on to
+        // whatever the normal Pal uses, so an Alpha gives you its own loot
+        // plus everything its normal counterpart drops.
+        //
+        // For most rows that means changing a percentage and nothing else, the
+        // game has already placed the right item in the right slot. Where the
+        // Alpha row ran out of room and never received an item, it is added
+        // whole into a slot that was empty.
+        //
+        // The lines marked "vanilla" are notes, not changes. They show what the
+        // Alpha already drops so you can see what this mod is adding.
+        //
+        // Nothing that already drops is removed. Slot 10 is never written, so
+        // this can run alongside the Pals Drop Dog Coins mod.
+        // ---------------------------------------------------------------
+
+        // Melpaca
+        "BOSS_Alpaca000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Wool: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Kitsun
+        "BOSS_AmaterasuWolf000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x6-8  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Kitsun Noct
+        "BOSS_AmaterasuWolf_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalDarkParts: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Anubis
+        "BOSS_Anubis000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x5-7  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone3: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // TechnologyBook_G2: not in the Alpha row, adding to slot 9  (5%)
+            "ItemId9": "TechnologyBook_G2",
+            "Rate9": 5,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Nyafia
+        "BOSS_BadCatgirl000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Incineram
+        "BOSS_Baphomet000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // Horn: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Incineram Noct
+        "BOSS_Baphomet_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // Horn: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Mau
+        "BOSS_Bastet000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // Money: 0% -> 50%   (already in slot 2, rate only)
+            "Rate2": 50,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Mau Cryst
+        "BOSS_Bastet_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Sapphire: 0% -> 1%   (already in slot 3, rate only)
+            "Rate3": 1
+        },
+        // Believer_Bat
+        "BOSS_Believer_Bat000": {
+            // vanilla: Money  100%  x100-150  (slot 1)
+            // TreasureBoxKey01: 0% -> 1%   (already in slot 2, rate only)
+            "Rate2": 1,
+            // Medicines: not in the Alpha row, adding to slot 9  (5%)
+            "ItemId9": "Medicines",
+            "Rate9": 5,
+            "min9": 1,
+            "Max9": 1,
+            // ChickenSaute: not in the Alpha row, adding to slot 8  (2%)
+            "ItemId8": "ChickenSaute",
+            "Rate8": 2,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Caprity
+        "BOSS_BerryGoat000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Meat_BerryGoat: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Berries: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Horn: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Horn",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Caprity Noct
+        "BOSS_BerryGoat_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Meat_BerryGoat: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Berries: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Horn: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100,
+            // Venom: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Venom",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Vanwyrm
+        "BOSS_BirdDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x4-6  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Ruby: 0% -> 1%   (already in slot 3, rate only)
+            "Rate3": 1,
+            // Money: not in the Alpha row, adding to slot 9  (10%)
+            "ItemId9": "Money",
+            "Rate9": 10,
+            "min9": 10,
+            "Max9": 40
+        },
+        // Vanwyrm Cryst
+        "BOSS_BirdDragon_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x5-7  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Sapphire: not in the Alpha row, adding to slot 9  (2%)
+            "ItemId9": "Sapphire",
+            "Rate9": 2,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Necromus
+        "BOSS_BlackCentaur000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x6-8  (slot 4)
+            // vanilla: Blueprint_SFHelmet_5  3%  x1-1  (slot 5)
+            // StainlessSteel: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Diamond: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Diamond",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone3",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Dragostrophe
+        "BOSS_BlackFurDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x6-8  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Shadowbeak
+        "BOSS_BlackGriffon000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x6-8  (slot 4)
+            // Plastic: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // CarbonFiber: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // TechnologyBook_G2: not in the Alpha row, adding to slot 9  (10%)
+            "ItemId9": "TechnologyBook_G2",
+            "Rate9": 10,
+            "min9": 1,
+            "Max9": 1,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone3",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Astegon
+        "BOSS_BlackMetalDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x4-6  (slot 4)
+            // vanilla: Blueprint_IronArmorHeat_5  3%  x1-1  (slot 5)
+            // Plastic: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "PalUpgradeStone3",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Smokie
+        "BOSS_BlackPuppy000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Chromium: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Smokie Cryst
+        "BOSS_BlackPuppy_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // IceOrgan: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "IceOrgan",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2,
+            // PalUpgradeStone2: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone2",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Azurobe
+        "BOSS_BlueDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x5-6  (slot 4)
+            // vanilla: Blueprint_SemiAutoRifle_5  3%  x1-1  (slot 5)
+            // Cloth: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Azurobe Cryst
+        "BOSS_BlueDragon_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 6)
+            // Cloth: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Fuack
+        "BOSS_BluePlatypus000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Fuack Ignis
+        "BOSS_BluePlatypus_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 6)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // FireOrgan: 0% -> 50%   (already in slot 4, rate only)
+            "Rate4": 50
+        },
+        // Shaolong
+        "BOSS_BlueSkyDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x8-9  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // Horn: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalUpgradeStone3: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Azurmane
+        "BOSS_BlueThunderHorse000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: Blueprint_EnergyShotgun_5  3%  x1-1  (slot 3)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Prunelia
+        "BOSS_BlueberryFairy000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Herbs: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // CarrotSeeds: 0% -> 50%   (already in slot 4, rate only)
+            "Rate4": 50
+        },
+        // Rushoar
+        "BOSS_Boar000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // Meat_Boar: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Bone: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Bone",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Lapiron
+        "BOSS_BrownRabbit000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Needoll
+        "BOSS_CactusDoll000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Fiber: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Needoll Noct
+        "BOSS_CactusDoll_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Fiber: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Venom: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Sootseer
+        "BOSS_CandleGhost000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 4)
+            // PalUpgradeStone2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // CrudeOil: not in the Alpha row, adding to slot 9  (50%)
+            "ItemId9": "CrudeOil",
+            "Rate9": 50,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Penking
+        "BOSS_CaptainPenguin000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x3-4  (slot 4)
+            // vanilla: Blueprint_FurHelmet_5  3%  x1-1  (slot 5)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_CaptainPenguin: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Penking Lux
+        "BOSS_CaptainPenguin_Black000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_CaptainPenguin: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Lifmunk
+        "BOSS_Carbunclo000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // WheatSeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Herbs: 0% -> 20%   (already in slot 3, rate only)
+            "Rate3": 20
+        },
+        // Tombat
+        "BOSS_CatBat000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 1%   (already in slot 3, rate only)
+            "Rate3": 1
+        },
+        // Katress
+        "BOSS_CatMage000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-4  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_CatMage: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50,
+            // TechnologyBook_G1: not in the Alpha row, adding to slot 9  (1%)
+            "ItemId9": "TechnologyBook_G1",
+            "Rate9": 1,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Katress Ignis
+        "BOSS_CatMage_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: TechnologyBook_G1  1%  x1-1  (slot 4)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_CatMage: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Felbat
+        "BOSS_CatVampire000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-3  (slot 4)
+            // Cloth: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 3%   (already in slot 3, rate only)
+            "Rate3": 3
+        },
+        // Chikipi
+        "BOSS_ChickenPal000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x1-2  (slot 4)
+            // Egg: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Meat_ChickenPal: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Amione
+        "BOSS_ClioneTwins000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Clovee
+        "BOSS_CloverFairy000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // BerrySeeds: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "BerrySeeds",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Dupin
+        "BOSS_ClownRabbit000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Tocotoco
+        "BOSS_ColorfulBird000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x1-2  (slot 4)
+            // Gunpowder2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_ColorfulBird: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Mozzarina
+        "BOSS_CowPal000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Meat_CowPal: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Milk: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Tetroise
+        "BOSS_CubeTurtle000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Ruby: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Ruby",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone3",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Tetroise Primo
+        "BOSS_CubeTurtle_Neutral000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Eemerald: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Eemerald",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone3",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Cinnamoth
+        "BOSS_CuteButterfly000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-4  (slot 4)
+            // Honey: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // LettuceSeeds: 0% -> 75%   (already in slot 3, rate only)
+            "Rate3": 75,
+            // TomatoSeeds: not in the Alpha row, adding to slot 9  (75%)
+            "ItemId9": "TomatoSeeds",
+            "Rate9": 75,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Vixy
+        "BOSS_CuteFox000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Fuddler
+        "BOSS_CuteMole000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Souffline
+        "BOSS_DandelionGirl000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // WheatSeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Xenovader
+        "BOSS_DarkAlien000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x5-6  (slot 4)
+            // MeteorDrop: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Cawgnito
+        "BOSS_DarkCrow000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x1-2  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Venom: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalUpgradeStone: not in the Alpha row, adding to slot 9  (1%)
+            "ItemId9": "PalUpgradeStone",
+            "Rate9": 1,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Majex
+        "BOSS_DarkFlameFox000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Xenolord
+        "BOSS_DarkMechaDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // MeteorDrop: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Menasting
+        "BOSS_DarkScorpion000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x5-7  (slot 4)
+            // vanilla: Blueprint_IronArmorCold_5  3%  x1-1  (slot 5)
+            // PalUpgradeStone2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Venom: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Menasting Terra
+        "BOSS_DarkScorpion_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 5)
+            // PalUpgradeStone2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Sapphire: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Eikthyrdeer
+        "BOSS_Deer000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Meat_Deer: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Horn: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Horn",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 2
+        },
+        // Eikthyrdeer Terra
+        "BOSS_Deer_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Meat_Deer: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Horn: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Horn",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 2
+        },
+        // Aegidron
+        "BOSS_DomeArmorDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // Thermal_Core: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Thermal_Core",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2,
+            // PalUpgradeStone4: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone4",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Daedream
+        "BOSS_DreamDemon000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-3  (slot 4)
+            // Venom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 1%   (already in slot 3, rate only)
+            "Rate3": 1
+        },
+        // Drillgame
+        "BOSS_Drillgame000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // CopperOre: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Galeclaw
+        "BOSS_Eagle000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-4  (slot 4)
+            // Meat_Eagle: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Sparkit
+        "BOSS_ElecCat000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Boltmane
+        "BOSS_ElecLion000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x4-6  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Slowatt
+        "BOSS_ElecLizard000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // ElectricOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Grizzbolt
+        "BOSS_ElecPanda000": {
+            // vanilla: PalCrystal_Ex  100%  x4-5  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x4-5  (slot 4)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Puffolt
+        "BOSS_ElecPomeranian000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Snock
+        "BOSS_ElecSnail000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Snock Terra
+        "BOSS_ElecSnail_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Elphidran
+        "BOSS_FairyDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x4-5  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x4-5  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Elphidran Aqua
+        "BOSS_FairyDragon_Water000": {
+            // vanilla: PalCrystal_Ex  100%  x4-5  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x4-5  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Dazemu
+        "BOSS_FeatherOstrich000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Fenglope
+        "BOSS_FengyunDeeper000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x3-5  (slot 4)
+            // vanilla: Blueprint_MakeshiftHandgun_5  3%  x1-1  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Horn: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Fenglope Lux
+        "BOSS_FengyunDeeper_Electric000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Horn: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // ElectricOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // FireCult_Rifle
+        "BOSS_FireCult_Rifle000": {
+            // vanilla: FireOrgan  100%  x1-1  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // AssaultRifleBullet: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "AssaultRifleBullet",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2,
+            // Polymer: not in the Alpha row, adding to slot 8  (20%)
+            "ItemId8": "Polymer",
+            "Rate8": 20,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Pyrin
+        "BOSS_FireKirin000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Pyrin Noct
+        "BOSS_FireKirin_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Rooby
+        "BOSS_FlameBambi000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-3  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Arsox
+        "BOSS_FlameBuffalo000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x3-3  (slot 4)
+            // Horn: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dinossom
+        "BOSS_FlowerDinosaur000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x1-3  (slot 4)
+            // TomatoSeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // LettuceSeeds: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dinossom Lux
+        "BOSS_FlowerDinosaur_Electric000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x5-7  (slot 4)
+            // TomatoSeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // CarrotSeeds: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Petallia
+        "BOSS_FlowerDoll000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-4  (slot 4)
+            // Poppy: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PotatoSeeds: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Petallia Ignis
+        "BOSS_FlowerDoll_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // poppy: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dandilord
+        "BOSS_FlowerPrince000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalUpgradeStone4: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Venom: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100,
+            // AncientParts2: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "AncientParts2",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Flopie
+        "BOSS_FlowerRabbit000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-3  (slot 4)
+            // Herbs: 0% -> 20%   (already in slot 2, rate only)
+            "Rate2": 20,
+            // LettuceSeeds: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Muffly
+        "BOSS_FluffyBird000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Celaray
+        "BOSS_FlyingManta000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x1-2  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Celaray Lux
+        "BOSS_FlyingManta_Thunder000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Flaracle
+        "BOSS_FoxExorcist000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Wixen
+        "BOSS_FoxMage000": {
+            // vanilla: PalCrystal_Ex  100%  x4-5  (slot 1)
+            // vanilla: TechnologyBook_G1  1%  x1-1  (slot 3)
+            // vanilla: PalItem_ToSell_05  100%  x4-5  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Wixen Noct
+        "BOSS_FoxMage_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x4-5  (slot 1)
+            // vanilla: TechnologyBook_G1  1%  x1-1  (slot 3)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 4)
+            // PalUpgradeStone2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Teafant
+        "BOSS_Ganesha000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x1-2  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Direhowl
+        "BOSS_Garm000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: Ruby  3%  x1-1  (slot 3)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Money: not in the Alpha row, adding to slot 9  (3%)
+            "ItemId9": "Money",
+            "Rate9": 3,
+            "min9": 10,
+            "Max9": 20
+        },
+        // Ghangler
+        "BOSS_GhostAnglerfish000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 6)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Venom: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Ghangler Ignis
+        "BOSS_GhostAnglerfish_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 6)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Maraith
+        "BOSS_GhostBeast000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-4  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 15%   (already in slot 3, rate only)
+            "Rate3": 15,
+            // CrudeOil: not in the Alpha row, adding to slot 9  (50%)
+            "ItemId9": "CrudeOil",
+            "Rate9": 50,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Wispaw
+        "BOSS_GhostBlackCat000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalUpgradeStone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Eidrolon
+        "BOSS_GhostDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Eidrolon Ignis
+        "BOSS_GhostDragon_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Nitemary
+        "BOSS_GhostRabbit000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // PalUpgradeStone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Nitemary Botan
+        "BOSS_GhostRabbit_Grass000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // PalUpgradeStone2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Gildane
+        "BOSS_GoldenHorse000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // GoodwillAmbassador
+        "BOSS_GoodwillAmbassador000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // Gorirat
+        "BOSS_Gorilla000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-4  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Gorirat Terra
+        "BOSS_Gorilla_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // CopperOre: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dualith
+        "BOSS_GrassGolem000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Poppy: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "PalUpgradeStone3",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Dualith Noct
+        "BOSS_GrassGolem_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PoisonMushroom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "PalUpgradeStone3",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Mammorest
+        "BOSS_GrassMammoth000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x5-6  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Meat_GrassMammoth: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Meat_GrassMammoth",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 2
+        },
+        // Mammorest Cryst
+        "BOSS_GrassMammoth_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x5-6  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Meat_GrassMammoth: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Meat_GrassMammoth",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 2
+        },
+        // Elgrove
+        "BOSS_GrassMinotaur000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Horn: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Elgrove Cryst
+        "BOSS_GrassMinotaur_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Horn: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Mossanda
+        "BOSS_GrassPanda000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-4  (slot 4)
+            // Wood_Fine: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // CarrotSeeds: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "CarrotSeeds",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Mossanda Lux
+        "BOSS_GrassPanda_Electric000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x4-6  (slot 4)
+            // Wood_Fine: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // ElectricOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Leather: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Leather",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 3
+        },
+        // Verdash
+        "BOSS_GrassRabbitMan000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x4-6  (slot 4)
+            // vanilla: Blueprint_SingleShotRifle_5  3%  x1-1  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Splatterina
+        "BOSS_GrimGirl000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalDarkParts: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Guard_Rifle
+        "BOSS_Guard_Rifle000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // AssaultRifleBullet: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Guard_Shotgun
+        "BOSS_Guard_Shotgun000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // ShotgunBullet: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100,
+            // PalSphere_Mega: not in the Alpha row, adding to slot 9  (40%)
+            "ItemId9": "PalSphere_Mega",
+            "Rate9": 40,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Yakumo
+        "BOSS_GuardianDog000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-4  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Helzephyr
+        "BOSS_HadesBird000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x4-6  (slot 4)
+            // Venom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone2: 0% -> 3%   (already in slot 3, rate only)
+            "Rate3": 3
+        },
+        // Helzephyr Lux
+        "BOSS_HadesBird_Electric000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone2: 0% -> 3%   (already in slot 3, rate only)
+            "Rate3": 3
+        },
+        // Nitewing
+        "BOSS_HawkBird000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x3-4  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Jolthog
+        "BOSS_Hedgehog000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Jolthog Cryst
+        "BOSS_Hedgehog_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Warsect
+        "BOSS_HerculesBeetle000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-4  (slot 4)
+            // vanilla: Blueprint_LaserGatlingGun_5  3%  x1-1  (slot 5)
+            // Honey: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Warsect Terra
+        "BOSS_HerculesBeetle_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // Honey: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Hoodle
+        "BOSS_HoodGhost000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalUpgradeStone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Horn: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Faleris
+        "BOSS_Horus000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x6-8  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Faleris Aqua
+        "BOSS_Horus_Water000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Hunter_Bat
+        "BOSS_Hunter_Bat000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // TreasureBoxKey01: not in the Alpha row, adding to slot 9  (1%)
+            "ItemId9": "TreasureBoxKey01",
+            "Rate9": 1,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Hunter_Handgun
+        "BOSS_Hunter_Handgun000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // vanilla: TreasureBoxKey01  1%  x1-1  (slot 4)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // RoughBullet: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "RoughBullet",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Hunter_RocketLauncher
+        "BOSS_Hunter_RocketLauncher000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // vanilla: TreasureBoxKey01  1%  x1-1  (slot 4)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // PalSphere_Giga: not in the Alpha row, adding to slot 9  (40%)
+            "ItemId9": "PalSphere_Giga",
+            "Rate9": 40,
+            "min9": 1,
+            "Max9": 2,
+            // ExplosiveBullet: not in the Alpha row, adding to slot 8  (50%)
+            "ItemId8": "ExplosiveBullet",
+            "Rate8": 50,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Hunter_Shotgun
+        "BOSS_Hunter_Shotgun000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // vanilla: TreasureBoxKey01  1%  x1-1  (slot 4)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // PalSphere_giga: not in the Alpha row, adding to slot 9  (40%)
+            "ItemId9": "PalSphere_giga",
+            "Rate9": 40,
+            "min9": 1,
+            "Max9": 2,
+            // ShotgunBullet: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "ShotgunBullet",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Munchill
+        "BOSS_IceCrocodile000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // Meat_IceCrocodile: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Reindrix
+        "BOSS_IceDeer000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x6-8  (slot 4)
+            // Meat_IceDeer: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Horn: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Horn",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 2,
+            // IceOrgan: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "IceOrgan",
+            "Rate8": 100,
+            "min8": 2,
+            "Max8": 3
+        },
+        // Foxcicle
+        "BOSS_IceFox000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x6-8  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Frostallion
+        "BOSS_IceHorse000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x6-8  (slot 4)
+            // vanilla: Blueprint_EnergyRocketLauncher_5  3%  x1-1  (slot 5)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Diamond: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Frostallion Noct
+        "BOSS_IceHorse_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x6-8  (slot 4)
+            // vanilla: Blueprint_OverheatRifle_5  3%  x1-1  (slot 5)
+            // Diamond: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone3: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Whalaska
+        "BOSS_IceNarwhal000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // ManganeseOre: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100,
+            // PalUpgradeStone3: 0% -> 1%   (already in slot 5, rate only)
+            "Rate5": 1
+        },
+        // Whalaska Ignis
+        "BOSS_IceNarwhal_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // ManganeseOre: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100,
+            // PalUpgradeStone3: 0% -> 1%   (already in slot 5, rate only)
+            "Rate5": 1
+        },
+        // Polapup
+        "BOSS_IceSeal000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Polapup Terra
+        "BOSS_IceSeal_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Icelyn
+        "BOSS_IceWitch000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 6)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Inspector
+        "BOSS_Inspector000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // Jelliette
+        "BOSS_JellyfishFairy000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Meat_JellyfishFairy: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Jellroy
+        "BOSS_JellyfishGhost000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Meat_JellyfishGhost: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Jetragon
+        "BOSS_JetDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x7-9  (slot 4)
+            // vanilla: Blueprint_Launcher_Default_5  3%  x1-1  (slot 5)
+            // SkyIslandOre: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Thermal_Core: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Diamond: not in the Alpha row, adding to slot 9  (30%)
+            "ItemId9": "Diamond",
+            "Rate9": 30,
+            "min9": 1,
+            "Max9": 1,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 8  (1%)
+            "ItemId8": "PalUpgradeStone3",
+            "Rate8": 1,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Renjishi
+        "BOSS_KabukiMan000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Kelpsea
+        "BOSS_Kelpie000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x1-2  (slot 4)
+            // Meat_Kelpie: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Kelpsea Ignis
+        "BOSS_Kelpie_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x1-2  (slot 4)
+            // Meat_Kelpie: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Croajiro
+        "BOSS_KendoFrog000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Cloth: 0% -> 25%   (already in slot 3, rate only)
+            "Rate3": 25
+        },
+        // Croajiro Noct
+        "BOSS_KendoFrog_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Cloth: 0% -> 25%   (already in slot 3, rate only)
+            "Rate3": 25,
+            // Venom: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Kingpaca
+        "BOSS_KingAlpaca000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x3-5  (slot 4)
+            // vanilla: Blueprint_CopperArmor_5  3%  x1-1  (slot 5)
+            // Wool: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Kingpaca Cryst
+        "BOSS_KingAlpaca_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x5-7  (slot 4)
+            // Wool: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Blazamut
+        "BOSS_KingBahamut000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x5-7  (slot 4)
+            // vanilla: Blueprint_AssaultRifle_Default5  3%  x1-1  (slot 5)
+            // Coal: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Blazamut Ryu
+        "BOSS_KingBahamut_Dragon000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x6-8  (slot 4)
+            // Coal: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone2: 0% -> 5%   (already in slot 3, rate only)
+            "Rate3": 5
+        },
+        // Solmora
+        "BOSS_KingSunfish000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "PalFluid",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 2
+        },
+        // Solmora Lux
+        "BOSS_KingSunfish_Thunder000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // ElectricOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Panthalus
+        "BOSS_KingWhale000": {
+            // vanilla: PalCrystal_Ex  100%  x8-9  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Diamond: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Diamond",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1,
+            // PalUpgradeStone4: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone4",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Univolt
+        "BOSS_Kirin000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x4-6  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // ElectricOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Horn: not in the Alpha row, adding to slot 9  (50%)
+            "ItemId9": "Horn",
+            "Rate9": 50,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Univolt Cryst
+        "BOSS_Kirin_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Horn: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50,
+            // IceOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Foxparks
+        "BOSS_Kitsunebi000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Foxparks Cryst
+        "BOSS_Kitsunebi_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Loomen
+        "BOSS_LanternButler000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Venom: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Flambelle
+        "BOSS_LavaGirl000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x1-3  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dumud
+        "BOSS_LazyCatfish000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x3-4  (slot 4)
+            // Meat_LazyCatfish: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dumud Gild
+        "BOSS_LazyCatfish_Gold000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // Meat_LazyCatfish: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Money: 0% -> 50%   (already in slot 4, rate only)
+            "Rate4": 50
+        },
+        // Relaxaurus
+        "BOSS_LazyDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-4  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Ruby: 0% -> 5%   (already in slot 3, rate only)
+            "Rate3": 5
+        },
+        // Relaxaurus Lux
+        "BOSS_LazyDragon_Electric000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x3-5  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // ElectricOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Sapphire: not in the Alpha row, adding to slot 9  (5%)
+            "ItemId9": "Sapphire",
+            "Rate9": 5,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Herbil
+        "BOSS_LeafMomonga000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 6)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // WheatSeeds: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "WheatSeeds",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Lullu
+        "BOSS_LeafPrincess000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 4)
+            // Poppy: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Berries: 0% -> 60%   (already in slot 3, rate only)
+            "Rate3": 60
+        },
+        // Hartalis
+        "BOSS_LegendDeer": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalUpgradeStone3  30%  x1-1  (slot 4)
+            // vanilla: PalItem_ToSell_05  100%  x6-8  (slot 5)
+            // Horn: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Lyleen
+        "BOSS_LilyQueen000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x6-7  (slot 4)
+            // Potion_High: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // TechnologyBook_G2: not in the Alpha row, adding to slot 9  (10%)
+            "ItemId9": "TechnologyBook_G2",
+            "Rate9": 10,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Lyleen Noct
+        "BOSS_LilyQueen_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x6-7  (slot 4)
+            // vanilla: Blueprint_LaserRifle_5  3%  x1-1  (slot 5)
+            // Potion_High: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // TechnologyBook_G2: not in the Alpha row, adding to slot 9  (10%)
+            "ItemId9": "TechnologyBook_G2",
+            "Rate9": 10,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Bristla
+        "BOSS_LittleBriarRose000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-4  (slot 4)
+            // TomatoSeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Leezpunk
+        "BOSS_LizardMan000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: TreasureBoxKey02  2%  x1-1  (slot 3)
+            // vanilla: PalItem_ToSell_03  100%  x1-2  (slot 5)
+            // TreasureBoxKey01: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_LizardMan: not in the Alpha row, adding to slot 9  (50%)
+            "ItemId9": "PalItem_LizardMan",
+            "Rate9": 50,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Leezpunk Ignis
+        "BOSS_LizardMan_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: TreasureBoxKey02  2%  x1-1  (slot 3)
+            // vanilla: PalItem_ToSell_03  100%  x1-2  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_LizardMan: not in the Alpha row, adding to slot 9  (50%)
+            "ItemId9": "PalItem_LizardMan",
+            "Rate9": 50,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Valentail
+        "BOSS_LongCat000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Ophydia
+        "BOSS_LotusDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone3: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Male_DarkTrader01
+        "BOSS_Male_DarkTrader01000": {
+            // vanilla: Money  100%  x10000-15000  (slot 1)
+            // TreasureBoxKey03: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Male_Scientist01_LaserRifle
+        "BOSS_Male_Scientist01_LaserRifle000": {
+            // vanilla: Money  100%  x200-400  (slot 1)
+            // TreasureBoxKey02: 0% -> 3%   (already in slot 2, rate only)
+            "Rate2": 3,
+            // MachineParts2: not in the Alpha row, adding to slot 9  (10%)
+            "ItemId9": "MachineParts2",
+            "Rate9": 10,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Blazehowl
+        "BOSS_Manticore000": {
+            // vanilla: PalCrystal_Ex  100%  x4-5  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x4-5  (slot 4)
+            // vanilla: Blueprint_Musket_5  3%  x1-1  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Blazehowl Noct
+        "BOSS_Manticore_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x4-6  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Mimog
+        "BOSS_MimicDog000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: DogCoin  100%  x35-35  (slot 3)
+            // vanilla: ExpBoost_04  100%  x1-1  (slot 4)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 5)
+            // Money: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // MobuCitizen
+        "BOSS_MobuCitizen000": {
+            // vanilla: Pan  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // MobuCitizen_Male
+        "BOSS_MobuCitizen_Male000": {
+            // vanilla: Pan  100%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // MobuVillager
+        "BOSS_MobuVillager000": {
+            // vanilla: Pan  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // Tanzee
+        "BOSS_Monkey000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // Mushroom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Tanzee Ignis
+        "BOSS_Monkey_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Mushroom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Solenne
+        "BOSS_MonochromeQueen000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalDarkParts: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Potion_High: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Wistella
+        "BOSS_MoonChild000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // NightStone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Selyne
+        "BOSS_MoonQueen000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x6-8  (slot 4)
+            // Sapphire: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Cloth2: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Cloth2",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Swee
+        "BOSS_MopBaby000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-4  (slot 4)
+            // Wool: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_MopBaby: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Sweepa
+        "BOSS_MopKing000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x5-7  (slot 4)
+            // Wool: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Silvance
+        "BOSS_Mothman000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalUpgradeStone4: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // AncientParts2: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Gildra
+        "BOSS_MummyPal000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 5)
+            // Cloth: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Shroomer
+        "BOSS_MushroomDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 4)
+            // Mushroom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Berries: 0% -> 60%   (already in slot 3, rate only)
+            "Rate3": 60
+        },
+        // Shroomer Noct
+        "BOSS_MushroomDragon_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Venom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PoisonMushroom: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Mycora
+        "BOSS_MushroomLady000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Mushroom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PoisonMushroom: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Lunaris
+        "BOSS_Mutant000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x4-6  (slot 4)
+            // Pal_crystal_S: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Omascul
+        "BOSS_MysteryMask000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalDarkParts: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Grintale
+        "BOSS_NaughtyCat000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x3-4  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Depresso
+        "BOSS_NegativeKoala000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Venom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Killamari
+        "BOSS_NegativeOctopus000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Venom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_NegativeOctopus: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50,
+            // PalFluid: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "PalFluid",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Killamari Primo
+        "BOSS_NegativeOctopus_Neutral000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_NegativeOctopus: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Starryon
+        "BOSS_NightBlueHorse000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalDarkParts: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Starryon Primo
+        "BOSS_NightBlueHorse_Neutral000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // NightStone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Nox
+        "BOSS_NightFox000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 40%   (already in slot 3, rate only)
+            "Rate3": 40
+        },
+        // Bellanoir
+        "BOSS_NightLady000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 3)
+            // PalDarkParts: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Bellanoir Libero
+        "BOSS_NightLady_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 3)
+            // PalDarkParts: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Potion_High: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Potion_High",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Gloopie
+        "BOSS_OctopusGirl000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Meat_OctopusGirl: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Gloopie Primo
+        "BOSS_OctopusGirl_Neutral000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Meat_OctopusGirl: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Bakemi
+        "BOSS_OniGhostGirl000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Cloth: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Horn: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalUpgradeStone: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // PalDealer
+        "BOSS_PalDealer000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // PalTrader
+        "BOSS_PalTrader000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Leafan
+        "BOSS_PandaGirl000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Pengullet
+        "BOSS_Penguin000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Pengullet Lux
+        "BOSS_Penguin_Electric000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 6)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalFluid: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Cattiva
+        "BOSS_PinkCat000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-2  (slot 4)
+            // Berries: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Lovander
+        "BOSS_PinkLizard000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-4  (slot 4)
+            // Mushroom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Cake: 0% -> 1%   (already in slot 3, rate only)
+            "Rate3": 1,
+            // Opium: not in the Alpha row, adding to slot 9  (1%)
+            "ItemId9": "Opium",
+            "Rate9": 1,
+            "min9": 1,
+            "Max9": 1,
+            // Narcotic: not in the Alpha row, adding to slot 8  (1%)
+            "ItemId8": "Narcotic",
+            "Rate8": 1,
+            "min8": 1,
+            "Max8": 1,
+            // StatusPointResetSan: not in the Alpha row, adding to slot 7  (1%)
+            "ItemId7": "StatusPointResetSan",
+            "Rate7": 1,
+            "min7": 1,
+            "Max7": 1
+        },
+        // Ribbuny
+        "BOSS_PinkRabbit000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: 0% -> 5%   (already in slot 3, rate only)
+            "Rate3": 5,
+            // PalItem_PinkRabbit: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "PalItem_PinkRabbit",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1,
+            // BerrySeeds: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "BerrySeeds",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Ribbuny Botan
+        "BOSS_PinkRabbit_Grass000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_PinkRabbit: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50,
+            // CarrotSeeds: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100,
+            // Carrot: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Carrot",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Gumoss
+        "BOSS_PlantSlime000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-2  (slot 4)
+            // BerrySeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_PlantSlime: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50
+        },
+        // Gumoss
+        "BOSS_PlantSlime_Flower000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-2  (slot 4)
+            // Poppy: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // BerrySeeds: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "BerrySeeds",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1,
+            // PalItem_PlantSlime: not in the Alpha row, adding to slot 8  (50%)
+            "ItemId8": "PalItem_PlantSlime",
+            "Rate8": 50,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Braloha
+        "BOSS_Plesiosaur000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 6)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Berries: 0% -> 60%   (already in slot 3, rate only)
+            "Rate3": 60,
+            // LettuceSeeds: 0% -> 50%   (already in slot 4, rate only)
+            "Rate4": 50,
+            // TomatoSeeds: 0% -> 50%   (already in slot 5, rate only)
+            "Rate5": 50
+        },
+        // Police_Handgun
+        "BOSS_Police_Handgun000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // HandgunBullet: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Police_Shotgun
+        "BOSS_Police_Shotgun000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40,
+            // ShotgunBullet: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100,
+            // PalSphere_Mega: not in the Alpha row, adding to slot 9  (40%)
+            "ItemId9": "PalSphere_Mega",
+            "Rate9": 40,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Neptilius
+        "BOSS_PoseidonOrca000": {
+            // left out, every slot is used by a live drop: StainlessSteel
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 6)
+            // vanilla: Blueprint_ChargeLaserRifle_5  3%  x1-1  (slot 9)
+            // Diamond: 0% -> 30%   (already in slot 5, rate only)
+            "Rate5": 30,
+            // PalUpgradeStone3: 0% -> 1%   (already in slot 8, rate only)
+            "Rate8": 1,
+            // ManganeseOre: not in the Alpha row, adding to slot 7  (100%)
+            "ItemId7": "ManganeseOre",
+            "Rate7": 100,
+            "min7": 10,
+            "Max7": 10
+        },
+        // Tarantriss
+        "BOSS_PurpleSpider000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Fiber: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Venom: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Elizabee
+        "BOSS_QueenBee000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x5-6  (slot 4)
+            // vanilla: Blueprint_DoubleBarrelShotgun_5  3%  x1-1  (slot 5)
+            // Honey: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Spear_QueenBee: not in the Alpha row, adding to slot 9  (3%)
+            "ItemId9": "Spear_QueenBee",
+            "Rate9": 3,
+            "min9": 1,
+            "Max9": 1
+        },
+        // QuestMan
+        "BOSS_QuestMan000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // Dazzi
+        "BOSS_RaijinDaughter000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_RaijinDaughter: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dazzi Noct
+        "BOSS_RaijinDaughter_Water000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalItem_RaijinDaughter: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalDarkParts: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Ragnahawk
+        "BOSS_RedArmorBird000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x4-6  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Tropicaw
+        "BOSS_RedFlowerBird000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // Poppy: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Fiber: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Robbery_Leader
+        "BOSS_Robbery_Leader000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // Robbery_Minion
+        "BOSS_Robbery_Minion000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // Robinquill
+        "BOSS_RobinHood000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-4  (slot 4)
+            // PotatoSeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Arrow: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Robinquill Terra
+        "BOSS_RobinHood_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-4  (slot 4)
+            // PotatoSeeds: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Arrow: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Pierdon
+        "BOSS_RockBeast000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // CopperOre: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Coal: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Sulfur: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Pierdon Cryst
+        "BOSS_RockBeast_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Quartz: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // SkyIslandOre: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "SkyIslandOre",
+            "Rate9": 100,
+            "min9": 4,
+            "Max9": 5
+        },
+        // Bushi
+        "BOSS_Ronin000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x3-5  (slot 4)
+            // vanilla: Blueprint_CopperHelmet_5  3%  x1-1  (slot 5)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // CopperIngot: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Bushi Noct
+        "BOSS_Ronin_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // CopperIngot: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalUpgradeStone2: 0% -> 40%   (already in slot 4, rate only)
+            "Rate4": 40
+        },
+        // Paladius
+        "BOSS_SaintCentaur000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x6-8  (slot 4)
+            // vanilla: Blueprint_SFArmorWeight_5  3%  x1-1  (slot 5)
+            // StainlessSteel: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Diamond: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Diamond",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 1,
+            // PalUpgradeStone3: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalUpgradeStone3",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 1
+        },
+        // Broncherry
+        "BOSS_SakuraSaurus000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x3-5  (slot 4)
+            // Meat_SakuraSaurus: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // OnionSeeds: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Broncherry Aqua
+        "BOSS_SakuraSaurus_Water000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x3-5  (slot 4)
+            // Meat_SakuraSaurus: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // OnionSeeds: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // SalesPerson
+        "BOSS_SalesPerson000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Pupperai
+        "BOSS_SamuraiDog000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Scientist_FlameThrower
+        "BOSS_Scientist_FlameThrower000": {
+            // vanilla: Money  100%  x200-400  (slot 1)
+            // TreasureBoxKey02: 0% -> 2%   (already in slot 2, rate only)
+            "Rate2": 2,
+            // MachineParts2: not in the Alpha row, adding to slot 9  (10%)
+            "ItemId9": "MachineParts2",
+            "Rate9": 10,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Prixter
+        "BOSS_ScorpionMan000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // Venom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Prixter Lux
+        "BOSS_ScorpionMan_Electric000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Sekhmet
+        "BOSS_Sekhmet000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone3: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Surfent
+        "BOSS_Serpent000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x1-2  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Surfent Terra
+        "BOSS_Serpent_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: CopperOre  100%  x2-3  (slot 3)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Gobfin
+        "BOSS_SharkKid000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-4  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Gobfin Ignis
+        "BOSS_SharkKid_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-4  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Lamball
+        "BOSS_SheepBall000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Wool: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Meat_SheepBall: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Dogen
+        "BOSS_SifuDog000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Quivern
+        "BOSS_SkyDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-4  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Quivern Botan
+        "BOSS_SkyDragon_Grass000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Berries: 0% -> 60%   (already in slot 4, rate only)
+            "Rate4": 60
+        },
+        // Lapure
+        "BOSS_SleeveRabbit000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Kikit
+        "BOSS_SmallArmadillo000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 60%   (already in slot 3, rate only)
+            "Rate3": 60,
+            // CrudeOil: not in the Alpha row, adding to slot 9  (50%)
+            "ItemId9": "CrudeOil",
+            "Rate9": 50,
+            "min9": 1,
+            "Max9": 1
+        },
+        // Snugloo
+        "BOSS_SmallYeti000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Wool: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Venusa
+        "BOSS_SnakeGirl000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Venom: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Frostplume
+        "BOSS_SnowPeafowl000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 6)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Bastigor
+        "BOSS_SnowTigerBeastman000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 4)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Beegarde
+        "BOSS_SoldierBee000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-4  (slot 4)
+            // Honey: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Finsider
+        "BOSS_StuffedShark000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 1%   (already in slot 3, rate only)
+            "Rate3": 1,
+            // PalFluid: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Finsider Ignis
+        "BOSS_StuffedShark_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x3-4  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalUpgradeStone: 0% -> 1%   (already in slot 3, rate only)
+            "Rate3": 1,
+            // FireOrgan: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Bulldosu
+        "BOSS_SumoDog000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Fiber: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Suzaku
+        "BOSS_Suzaku000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x5-7  (slot 4)
+            // vanilla: Blueprint_PumpActionShotgun_5  3%  x1-1  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Suzaku Aqua
+        "BOSS_Suzaku_Water000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x5-7  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Woolipop
+        "BOSS_SweetsSheep000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Sweet: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Woolipop Terra
+        "BOSS_SweetsSheep_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Sweet_Caramel: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Wool: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Skutlass
+        "BOSS_SwordCutlassfish000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Meat_SwordCutlassFish: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Meat_SwordCutlassFish",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2,
+            // PalFluid: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "PalFluid",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 2
+        },
+        // Skutlass Ignis
+        "BOSS_SwordCutlassfish_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // Meat_SwordCutlassFish: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Meat_SwordCutlassFish",
+            "Rate9": 100,
+            "min9": 1,
+            "Max9": 2
+        },
+        // Turtacle
+        "BOSS_TentacleTurtle000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x1-2  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Turtacle Terra
+        "BOSS_TentacleTurtle_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 6)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Bone: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // TestAssassin
+        "BOSS_TestAssassin000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // TestNPC
+        "BOSS_TestNPC000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 40%   (already in slot 2, rate only)
+            "Rate2": 40
+        },
+        // Roujay
+        "BOSS_ThiefBird000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Ruby: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Beakon
+        "BOSS_ThunderBird000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x5-6  (slot 4)
+            // vanilla: Blueprint_SubmachineGun_5  3%  x1-1  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Beakon Cryst
+        "BOSS_ThunderBird_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Rayhound
+        "BOSS_ThunderDog000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x4-6  (slot 4)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Rayhound Cryst
+        "BOSS_ThunderDog_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Orserk
+        "BOSS_ThunderDragonMan000": {
+            // vanilla: PalCrystal_Ex  100%  x5-7  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x5-7  (slot 4)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Dynamoff
+        "BOSS_ThunderFluffyBird000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 5)
+            // ElectricOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Palumba
+        "BOSS_TropicalOstrich000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_02  100%  x2-3  (slot 6)
+            // Wood_Fine: not in the Alpha row, adding to slot 9  (100%)
+            "ItemId9": "Wood_Fine",
+            "Rate9": 100,
+            "min9": 2,
+            "Max9": 4,
+            // OnionSeeds: not in the Alpha row, adding to slot 8  (100%)
+            "ItemId8": "OnionSeeds",
+            "Rate8": 100,
+            "min8": 1,
+            "Max8": 2,
+            // CarrotSeeds: not in the Alpha row, adding to slot 7  (100%)
+            "ItemId7": "CarrotSeeds",
+            "Rate7": 100,
+            "min7": 1,
+            "Max7": 2
+        },
+        // Jormuntide
+        "BOSS_Umihebi000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x5-6  (slot 4)
+            // PalFluid: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Jormuntide Ignis
+        "BOSS_Umihebi_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x5-6  (slot 4)
+            // PalOil: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Carnibora
+        "BOSS_VenusFlytrap000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Venom: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Fiber: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Vaelet
+        "BOSS_VioletFairy000": {
+            // vanilla: PalCrystal_Ex  100%  x4-5  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x4-5  (slot 4)
+            // vanilla: Blueprint_HandGun_Default_5  3%  x1-1  (slot 5)
+            // Herbs: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // TomatoSeeds: 0% -> 50%   (already in slot 3, rate only)
+            "Rate3": 50,
+            // OnionSeeds: not in the Alpha row, adding to slot 9  (50%)
+            "ItemId9": "OnionSeeds",
+            "Rate9": 50,
+            "min9": 1,
+            "Max9": 1
+        },
+        // VisitingMerchant
+        "BOSS_VisitingMerchant000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Reptyro
+        "BOSS_VolcanicMonster000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x3-5  (slot 4)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Reptyro Cryst
+        "BOSS_VolcanicMonster_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x3-5  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x3-5  (slot 4)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Moldron
+        "BOSS_VolcanoDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // FireOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Moldron Cryst
+        "BOSS_VolcanoDragon_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Leather: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // WeaponsDealer
+        "BOSS_WeaponsDealer000": {
+            // vanilla: PalSphere  40%  x1-2  (slot 1)
+            // Money: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Chillet
+        "BOSS_WeaselDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x2-4  (slot 1)
+            // vanilla: IceOrgan  100%  x2-3  (slot 3)
+            // vanilla: PalItem_ToSell_05  100%  x2-4  (slot 4)
+            // vanilla: Blueprint_ClothArmor_5  3%  x1-1  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Chillet Ignis
+        "BOSS_WeaselDragon_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Loupmoon
+        "BOSS_Werewolf000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x1-3  (slot 4)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Loupmoon Cryst
+        "BOSS_Werewolf_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 5)
+            // Bone: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Xenogard
+        "BOSS_WhiteAlienDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // MeteorDrop: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Celesdir
+        "BOSS_WhiteDeer000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Horn: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // RainbowCrystal: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Celesdir Noct
+        "BOSS_WhiteDeer_Dark000": {
+            // vanilla: PalCrystal_Ex  100%  x7-9  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Horn: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100,
+            // PalDarkParts: 0% -> 100%   (already in slot 4, rate only)
+            "Rate4": 100
+        },
+        // Sibelyx
+        "BOSS_WhiteMoth000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x5-6  (slot 4)
+            // Cloth2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Sibelyx Primo
+        "BOSS_WhiteMoth_Neutral000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // Cloth2: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Silvegis
+        "BOSS_WhiteShieldDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // Chromium: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Cryolinx
+        "BOSS_WhiteTiger000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x6-8  (slot 4)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Cryolinx Terra
+        "BOSS_WhiteTiger_Ground000": {
+            // vanilla: PalCrystal_Ex  100%  x7-8  (slot 1)
+            // vanilla: PalItem_ToSell_04  100%  x2-3  (slot 5)
+            // CopperOre: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Hangyu
+        "BOSS_WindChimes000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 4)
+            // Fiber: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // WheatSeeds: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Hangyu Cryst
+        "BOSS_WindChimes_Ice000": {
+            // vanilla: PalCrystal_Ex  100%  x2-3  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x2-3  (slot 4)
+            // Fiber: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // IceOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Knocklem
+        "BOSS_WingGolem000": {
+            // vanilla: PalCrystal_Ex  100%  x6-7  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x6-7  (slot 4)
+            // CopperOre: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Knocklem Ignis
+        "BOSS_WingGolem_Fire000": {
+            // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
+            // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
+            // CopperOre: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // FireOrgan: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Hoocrates
+        "BOSS_WizardOwl000": {
+            // vanilla: PalCrystal_Ex  100%  x1-3  (slot 1)
+            // vanilla: TechnologyBook_G1  1%  x1-1  (slot 3)
+            // vanilla: PalItem_ToSell_02  100%  x1-3  (slot 4)
+            // Fiber: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Cremis
+        "BOSS_WoolFox000": {
+            // vanilla: PalCrystal_Ex  100%  x1-2  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x1-2  (slot 4)
+            // Wool: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100
+        },
+        // Astralym
+        "BOSS_WorldTreeDragon000": {
+            // vanilla: PalCrystal_Ex  100%  x1-1  (slot 1)
+            // vanilla: PalItem_ToSell_01  100%  x2-3  (slot 5)
+            // Leather: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // PalOil: 0% -> 100%   (already in slot 3, rate only)
+            "Rate3": 100
+        },
+        // Wumpo
+        "BOSS_Yeti000": {
+            // vanilla: PalCrystal_Ex  100%  x6-8  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x6-8  (slot 4)
+            // IceOrgan: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: 0% -> 20%   (already in slot 3, rate only)
+            "Rate3": 20
+        },
+        // Wumpo Botan
+        "BOSS_Yeti_Grass000": {
+            // vanilla: PalCrystal_Ex  100%  x5-6  (slot 1)
+            // vanilla: PalItem_ToSell_05  100%  x5-6  (slot 4)
+            // Wood_Fine: 0% -> 100%   (already in slot 2, rate only)
+            "Rate2": 100,
+            // Poppy: not in the Alpha row, adding to slot 9  (20%)
+            "ItemId9": "Poppy",
+            "Rate9": 20,
+            "min9": 1,
+            "Max9": 1,
+            // CarrotSeeds: not in the Alpha row, adding to slot 8  (50%)
+            "ItemId8": "CarrotSeeds",
+            "Rate8": 50,
+            "min8": 1,
+            "Max8": 1
+        }
+    }
+}
