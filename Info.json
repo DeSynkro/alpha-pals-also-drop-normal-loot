@@ -2,7 +2,7 @@
   "ModName": "Alpha Pals Also Drop Normal Loot",
   "PackageName": "AlphaPalsDropNormalLoot",
   "Thumbnail": "thumbnail.png",
-  "Version": "1.0",
+  "Version": "1.1",
   "DebugMode": false,
   "MinRevision": 82182,
   "Author": "DeSynkro",
@@ -18,6 +18,13 @@
   "InstallRule": [
     {
       "Type": "PalSchema",
+      "Targets": [
+        "./PalSchema/"
+      ]
+    },
+    {
+      "Type": "PalSchema",
+      "IsServer": true,
       "Targets": [
         "./PalSchema/"
       ]

@@ -1201,16 +1201,20 @@
             // vanilla: PalSphere  40%  x1-2  (slot 1)
             // Money: 0% -> 40%   (already in slot 2, rate only)
             "Rate2": 40,
-            // AssaultRifleBullet: 0% -> 100%   (already in slot 4, rate only)
-            "Rate4": 100
+            // AssaultRifleBullet: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 4)
+            "Rate4": 100,
+            "min4": 1,
+            "Max4": 1
         },
         // Guard_Shotgun
         "BOSS_Guard_Shotgun000": {
             // vanilla: PalSphere  40%  x1-2  (slot 1)
             // Money: 0% -> 40%   (already in slot 2, rate only)
             "Rate2": 40,
-            // ShotgunBullet: 0% -> 100%   (already in slot 4, rate only)
+            // ShotgunBullet: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 4)
             "Rate4": 100,
+            "min4": 1,
+            "Max4": 1,
             // PalSphere_Mega: not in the Alpha row, adding to slot 9  (40%)
             "ItemId9": "PalSphere_Mega",
             "Rate9": 40,
@@ -1366,8 +1370,10 @@
             "Rate3": 100,
             // PalFluid: 0% -> 100%   (already in slot 2, rate only)
             "Rate2": 100,
-            // IceOrgan: 0% -> 100%   (already in slot 4, rate only)
-            "Rate4": 100
+            // IceOrgan: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 4)
+            "Rate4": 100,
+            "min4": 1,
+            "Max4": 2
         },
         // Reindrix
         "BOSS_IceDeer000": {
@@ -1973,8 +1979,10 @@
             // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 5)
             // PalUpgradeStone4: 0% -> 100%   (already in slot 3, rate only)
             "Rate3": 100,
-            // AncientParts2: 0% -> 100%   (already in slot 4, rate only)
-            "Rate4": 100
+            // AncientParts2: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 4)
+            "Rate4": 100,
+            "min4": 1,
+            "Max4": 1
         },
         // Gildra
         "BOSS_MummyPal000": {
@@ -2094,15 +2102,19 @@
         "BOSS_NightLady000": {
             // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
             // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 3)
-            // PalDarkParts: 0% -> 100%   (already in slot 2, rate only)
-            "Rate2": 100
+            // PalDarkParts: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 2)
+            "Rate2": 100,
+            "min2": 2,
+            "Max2": 3
         },
         // Bellanoir Libero
         "BOSS_NightLady_Dark000": {
             // vanilla: PalCrystal_Ex  100%  x4-6  (slot 1)
             // vanilla: PalItem_ToSell_03  100%  x2-3  (slot 3)
-            // PalDarkParts: 0% -> 100%   (already in slot 2, rate only)
+            // PalDarkParts: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 2)
             "Rate2": 100,
+            "min2": 2,
+            "Max2": 3,
             // Potion_High: not in the Alpha row, adding to slot 9  (100%)
             "ItemId9": "Potion_High",
             "Rate9": 100,
@@ -2285,16 +2297,20 @@
             // vanilla: PalSphere  40%  x1-2  (slot 1)
             // Money: 0% -> 40%   (already in slot 2, rate only)
             "Rate2": 40,
-            // HandgunBullet: 0% -> 100%   (already in slot 4, rate only)
-            "Rate4": 100
+            // HandgunBullet: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 4)
+            "Rate4": 100,
+            "min4": 1,
+            "Max4": 2
         },
         // Police_Shotgun
         "BOSS_Police_Shotgun000": {
             // vanilla: PalSphere  40%  x1-2  (slot 1)
             // Money: 0% -> 40%   (already in slot 2, rate only)
             "Rate2": 40,
-            // ShotgunBullet: 0% -> 100%   (already in slot 4, rate only)
+            // ShotgunBullet: 0% -> 100%, and the Alpha's quantity was 0-0 so it could never drop  (slot 4)
             "Rate4": 100,
+            "min4": 1,
+            "Max4": 1,
             // PalSphere_Mega: not in the Alpha row, adding to slot 9  (40%)
             "ItemId9": "PalSphere_Mega",
             "Rate9": 40,
